@@ -1,0 +1,44 @@
+version: '3.1'
+
+networks:
+  proxy:
+    external: true
+    name: proxy
+  wordpress_internal:
+
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    expose:
+      - 80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASS}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+    volumes:
+      - wordpress:/var/www/html
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.wordpress.rule=Host(`wp.queerreferat.ac`)"
+    networks:
+      - proxy
+      - wordpress_internal
+
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      - wordpress_internal
+
+volumes:
+  wordpress:
+  db:
