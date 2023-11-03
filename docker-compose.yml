@@ -6,6 +6,7 @@ networks:
     name: proxy
   wordpress_internal:
 
+
 services:
   wordpress:
     image: wordpress
@@ -21,10 +22,12 @@ services:
       - wordpress:/var/www/html
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.wordpress.rule=Host(`wp.queerreferat.ac`)"
+      - "traefik.http.routers.wordpress.rule=Host(`www.queerreferat.ac`)"
     networks:
       - proxy
       - wordpress_internal
+    env_file:
+      - .env
 
   db:
     image: mysql:latest
@@ -38,6 +41,8 @@ services:
       - db:/var/lib/mysql
     networks:
       - wordpress_internal
+    env_file:
+      - .env
 
 volumes:
   wordpress:
