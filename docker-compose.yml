@@ -19,7 +19,7 @@ services:
       WORDPRESS_DB_PASSWORD: ${DB_PASS}
       WORDPRESS_DB_NAME: ${DB_NAME}
     volumes:
-      - wordpress:/var/www/html
+      - ./wordpress:/var/www/html
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.wordpress.rule=Host(`www.queerreferat.ac`)"
@@ -38,12 +38,8 @@ services:
       MYSQL_PASSWORD: ${DB_PASS}
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - db:/var/lib/mysql
+      - ./db:/var/lib/mysql
     networks:
       - wordpress_internal
     env_file:
       - .env
-
-volumes:
-  wordpress:
-  db:
