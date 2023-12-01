@@ -4,7 +4,7 @@ networks:
   proxy:
     external: true
     name: proxy
-  wordpress_internal:
+  internal:
 
 
 services:
@@ -25,7 +25,7 @@ services:
       - "traefik.http.routers.wordpress.rule=Host(`www.queerreferat.ac`)"
     networks:
       - proxy
-      - wordpress_internal
+      - internal
     env_file:
       - .env
 
@@ -40,7 +40,7 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     networks:
-      - wordpress_internal
+      - internal
     env_file:
       - .env
 
@@ -56,5 +56,5 @@ services:
     ports:
       - 8084:80
     networks:
-      - wordpress_internal
+      - internal
       - proxy
