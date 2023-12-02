@@ -23,6 +23,13 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.wordpress.rule=Host(`www.queerreferat.ac`)"
+      # needs testing
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.middlewares=redirect@file"
+      - "traefik.http.routers.websecure.rule=Host(`www.queerreferat.ac`)"
+      - "traefik.http.routers.websecure.entrypoints=websecure"
+      - "traefik.http.routers.websecure.tls.certresolver=leresolver"
+
     networks:
       - proxy
       - internal
