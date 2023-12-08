@@ -75,14 +75,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '1724648a43306c49328efbf4b506d66c9fa7e4d8') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '4e49a9035858b37edfa4d491170aeca7cc26265e') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '7df1fd12f3513c138ed4202887ee3eae720a9cbf') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '319213560af06c08e6d727e3cdacbe658a2889ff') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '6f35b4fe6cb3a8cb0cb3328126d55b06aea06709') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', 'ef374045fd9787c770a425af1d157b6f92c3dc12') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '83068af45f69b55f34efbc18953e4461127ad12e') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '03dba11fdf8d89debed35745a9ef7030a07c0865') );
+define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '4cbdd2f1fc8205ad2803cd7d748fb11ce80cec8c') );
+define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  'c95346ae867ef8654e7196aa4da916a2c7290224') );
+define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '803be1bfe2d829d32d161b8e6eaae4d347798660') );
+define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        'ff03880ffd4bb2345f5b6441b64506bc043af47c') );
+define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '08092f5f641d997cf5f03058f951f67d8739ba0d') );
+define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', 'aaa0b7535bb65399bbc786da239a383cadefca28') );
+define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '580ba93fa02f07c07957100834971156d0c80dc3') );
+define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'a60cb47b5277c0a01e1aa3e3e16a0e147f576cf1') );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/

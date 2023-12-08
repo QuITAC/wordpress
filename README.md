@@ -6,16 +6,12 @@ This service should run under `www.queerreferat.ac`
 
 ## Development notes
 
-* installing plugins beforehand via script in the container is quite cumbersome. We probably have to do this manually by clicking through the interface and documenting every step we take
-* even though no physical location has been given for the volumes they still exist. even when doing `dc down`. this means for a full reset you would have to delete the volumes for the db and probably wordpress itself.
+* This repo is a near complete copy of the wordpress application itself. We can add plugins to the `wordpress/wp-content/plugins` folder directly.
+* Most data is dynamically saved in the database. which means the database needs proper backup once in production. While developing refer to the first startup section.
 
-## STate
+### First Startup
 
-Authentik throws after setup after manual (see wordpress.md in docs folder):
-
-```text
-Redirect URI Error
-The request fails due to a missing, invalid, or mismatching redirection URI (redirect_uri).
-```
-
-Investigate. Hopefully, just a typo.
+* Complete the 5-minute install.
+* Activate the OIDC Plugin.
+* Navigate to __Settings >> OpenID Connect Plugin__ and fill in the data from authentik in accordance to <https://goauthentik.io/integrations/services/wordpress/>.
+  * Contrary to the guide in the link select `Auto Login - SSO`, `Link Existing Users` and if necessary `Disable SSL Verify` and `Logging`.
