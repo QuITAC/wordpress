@@ -6,6 +6,8 @@ networks:
     name: proxy
   internal:
 
+volumes:
+  db:
 
 services:
   wordpress:
@@ -38,23 +40,23 @@ services:
       MYSQL_PASSWORD: ${DB_PASS}
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - ./db:/var/lib/mysql
+      - db:/var/lib/mysql
     networks:
       - internal
     env_file:
       - .env
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    links:
-      - db
-    environment:
-      PMA_HOST: db
-      PMA_PORT: 3306
-      PMA_ARBITRARY: 1
-    restart: always
-    ports:
-      - 8084:80
-    networks:
-      - internal
-      - proxy
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   links:
+  #     - db
+  #   environment:
+  #     PMA_HOST: db
+  #     PMA_PORT: 3306
+  #     PMA_ARBITRARY: 1
+  #   restart: always
+  #   ports:
+  #     - 8084:80
+  #   networks:
+  #     - internal
+  #     - proxy
