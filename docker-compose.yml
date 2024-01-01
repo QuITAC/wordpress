@@ -24,7 +24,11 @@ services:
       - ./wordpress:/var/www/html
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.wordpress.rule=Host(`www.queerreferat.ac`)"
+      - "traefik.http.routers.wordpress.rule=Host(`queerreferat.ac`, `www.queerreferat.ac`)"
+      - "traefik.http.middlewares.redirect-to-www.redirectregex.regex=^https?://queerreferat\\.ac/?(.*)"
+      - "traefik.http.middlewares.redirect-to-www.redirectregex.replacement=https://www.queerreferat.ac/$${1}"
+      - "traefik.http.middlewares.redirect-to-www.redirectregex.permanent=true"
+      - "traefik.http.routers.wordpress.middlewares=redirect-to-www"
     networks:
       - proxy
       - internal
