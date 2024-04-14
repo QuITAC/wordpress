@@ -24,6 +24,7 @@ services:
     volumes:
       - data:/var/www/html
       - ./plugins:/var/www/html/wp-content/plugins
+      - ./themes:/var/www/html/wp-content/themes
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.wordpress.rule=Host(`queerreferat.ac`, `www.queerreferat.ac`)"

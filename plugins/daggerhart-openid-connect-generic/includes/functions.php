@@ -36,7 +36,7 @@ add_action('openid-connect-generic-update-user-using-current-claim', function( $
             $user->set_role( 'administrator' );
 	}
         elseif ( in_array('pr',$user_claim['groups'])) {
-		$user->set_role('editor');
+		$user->set_role('administrator');
 	}	
 	elseif (in_array('vorstand',$user_claim['groups'])) {
 		$user->set_role('editor');
