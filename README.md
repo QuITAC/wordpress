@@ -16,6 +16,12 @@ This service should run under `www.queerreferat.ac`
 * Navigate to __Settings >> OpenID Connect Plugin__ and fill in the data from authentik in accordance to <https://goauthentik.io/integrations/services/wordpress/>.
   * Contrary to the guide in the link select `Auto Login - SSO`, `Link Existing Users` and if necessary `Disable SSL Verify` and `Logging`.
 
+### File/Folder Ownershop
+* Make sure all files and folders are owned by www-data
+```bash
+chown -R www-data:www-data [FOLDER]
+```
+
 ### Notes
 We edited the version.php File and added the following code 
 ```php
