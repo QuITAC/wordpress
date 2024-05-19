@@ -23,8 +23,8 @@ services:
       WORDPRESS_DB_NAME: ${DB_NAME}
     volumes:
       - data:/var/www/html
-      - ./plugins:/var/www/html/wp-content/plugins
-      - ./themes:/var/www/html/wp-content/themes
+      - /home/nico/queerreferat_ac/wordpress/plugins:/var/www/html/wp-content/plugins
+      - /home/nico/queerreferat_ac/wordpress/themes:/var/www/html/wp-content/themes
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.wordpress.rule=Host(`queerreferat.ac`, `www.queerreferat.ac`)"
