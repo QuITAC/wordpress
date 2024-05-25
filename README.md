@@ -23,7 +23,7 @@ chown -R www-data:www-data [FOLDER]
 ```
 
 ### Notes
-We edited the version.php File and added the following code 
+We edited the functions.php File and added the following code
 ```php
 add_action('openid-connect-generic-update-user-using-current-claim', function( $user, $user_claim) {
     // Based on some data in the user_claim, modify the user.
