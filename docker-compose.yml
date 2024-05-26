@@ -31,8 +31,7 @@ services:
       - "traefik.http.middlewares.redirect-to-www.redirectregex.regex=^https?://queerreferat\\.ac/?(.*)"
       - "traefik.http.middlewares.redirect-to-www.redirectregex.replacement=https://www.queerreferat.ac/$${1}"
       - "traefik.http.middlewares.redirect-to-www.redirectregex.permanent=true"
-      - "traefik.http.routers.wordpress.middlewares=redirect-to-www"
-      - "traefik.http.routers.wordpress.middlewares=wordpress-authentik"
+      - "traefik.http.routers.wordpress.middlewares=redirect-to-www,wordpress-authentik"
       - "traefik.http.middlewares.wordpress-authentik.forwardauth.address=http://authentik-server-1:9000/outpost.goauthentik.io/auth/traefik"
       # allow our scraping without requiring auth via authentik
       # based on https://github.com/goauthentik/authentik/issues/2029#issuecomment-1008365610
