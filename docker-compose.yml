@@ -35,7 +35,7 @@ services:
       - "traefik.http.middlewares.wordpress-authentik.forwardauth.address=http://authentik-server-1:9000/outpost.goauthentik.io/auth/traefik"
       # allow our scraping without requiring auth via authentik
       # based on https://github.com/goauthentik/authentik/issues/2029#issuecomment-1008365610
-      - "traefik.http.routers.wordpress-noauth.rule=Host(`www.queerreferat.ac`) && ( ClientIP(`157.90.119.62`) || ClientIP(`2a01:4f8:c2c:5535::1`))"
+      - "traefik.http.routers.wordpress-noauth.rule=Host(`www.queerreferat.ac`) && ( ClientIP(`157.90.119.62`) || ClientIP(`2a01:4f8:c2c:5535::1`) || ClientIP(`5.75.166.38`) || ClientIP(`2a01:4f8:1c1c:e9ec::1`))"
     networks:
       - proxy
       - internal
