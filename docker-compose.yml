@@ -12,7 +12,7 @@ volumes:
 
 services:
   wordpress:
-    image: wordpress
+    image: wordpress:latest
     restart: always
     expose:
       - 80
@@ -22,7 +22,7 @@ services:
       WORDPRESS_DB_PASSWORD: ${DB_PASS}
       WORDPRESS_DB_NAME: ${DB_NAME}
     volumes:
-      - data:/var/www/html
+      - data:/var/www/html:z
       - ./plugins:/var/www/html/wp-content/plugins
       - ./themes:/var/www/html/wp-content/themes
     labels:
@@ -46,6 +46,8 @@ services:
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASS}
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    expose:
+      - 8080:3306
     volumes:
       - db:/var/lib/mysql
     networks:
@@ -53,17 +55,17 @@ services:
     env_file:
       - .env
 
-  # phpmyadmin:
-  #   image: phpmyadmin/phpmyadmin
-  #   links:
-  #     - db
-  #   environment:
-  #     PMA_HOST: db
-  #     PMA_PORT: 3306
-  #     PMA_ARBITRARY: 1
-  #   restart: always
-  #   ports:
-  #     - 8084:80
-  #   networks:
-  #     - internal
-  #     - proxy
+#   phpmyadmin:
+#     image: phpmyadmin/phpmyadmin
+#     links:
+#       - db
+#     environment:
+#       PMA_HOST: db
+#       PMA_PORT: 3306
+#       PMA_ARBITRARY: 1
+#     restart: always
+#     ports:
+#       - 8084:80
+#     networks:
+#       - internal
+#       - proxy

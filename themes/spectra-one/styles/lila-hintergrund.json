@@ -1,0 +1,284 @@
+{
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#FEEE84",
+						"#FEEE84"
+					],
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"colors": [
+						"#FFFFFF",
+						"#FFFFFF"
+					],
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"colors": [
+						"#10141D",
+						"#10141D"
+					],
+					"name": "Tertiary",
+					"slug": "tertiary"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(284.04deg, #020714 0%, #06301E 25.33%, #4D4D29 52.07%, #10141F 100%)",
+					"name": "Primary",
+					"slug": "primary"
+				}
+			],
+			"palette": [
+				{
+					"color": "#d900d6",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#940bce",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Heading",
+					"slug": "heading"
+				},
+				{
+					"color": "#E5E7EB",
+					"name": "Body",
+					"slug": "body"
+				},
+				{
+					"color": "#020714",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#10141D",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#10141E",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				},
+				{
+					"color": "#10141F",
+					"name": "Surface",
+					"slug": "surface"
+				},
+				{
+					"color": "#101420",
+					"name": "Foreground",
+					"slug": "foreground"
+				},
+				{
+					"color": "#282B33",
+					"name": "Outline",
+					"slug": "outline"
+				},
+				{
+					"color": "#6E7787",
+					"name": "Neutral",
+					"slug": "neutral"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				},
+				{
+					"color": "currentColor",
+					"name": "Current Color",
+					"slug": "currentColor"
+				},
+				{
+					"color": "inherit",
+					"name": "Inherit",
+					"slug": "inherit"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Abril Fatface\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/zOL64pLDlL1D99S8g8PtiKchm-VsjOLhZBY.woff2"
+						}
+					],
+					"fontFamily": "\"Abril Fatface\", system-ui",
+					"name": "Abril Fatface",
+					"slug": "abril-fatface"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7myjJAVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7mwjJQVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7mz9JQVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7myjJQVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7myRJQVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7mx9IgVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7mxEIgVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7mwjIgVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zPtBhPNqw79Ij1E865zBUv7mwKIgVDPokMmuHL.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "100",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0ENIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "200",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0FNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZrMFNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0FNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZt8FNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZjMCNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZgoCNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0CNIgun_HLMEo.woff2"
+						},
+						{
+							"fontFamily": "Jost",
+							"fontStyle": "italic",
+							"fontWeight": "900",
+							"src": "https://www.queerreferat.ac/wp-content/uploads/fonts/92zJtBhPNqw73oHH7BbQp4-B6XlrZkQCNIgun_HLMEo.woff2"
+						}
+					],
+					"fontFamily": "Jost, sans-serif",
+					"name": "Jost",
+					"slug": "jost"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"shadow": "var(--wp--preset--shadow--natural)",
+				"variations": {
+					"outline": {
+						"shadow": "var(--wp--preset--shadow--natural)"
+					}
+				}
+			}
+		},
+		"color": {
+			"gradient": "radial-gradient(rgb(23,150,223) 0%,rgb(111,25,176) 100%)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--heading)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "67px"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"bottom": "0em",
+				"left": "1.25em",
+				"right": "1.25em",
+				"top": "0em"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--jost)"
+		}
+	},
+	"title": "Lila hintergrund",
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json"
+}
